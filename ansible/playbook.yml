@@ -1,3 +1,4 @@
+
 - name: Deploy to Tomcat
   hosts: web
   become: yes
@@ -10,6 +11,6 @@
     
 - name: Restart Tomcat
   shell: | 
-  	/opt/tomcat/bin/shutdown.sh || true 
-  	sleep 5
-  	/opt/tomcat/bin/startup.sh
+    /opt/tomcat/bin/shutdown.sh || true 
+    sleep 5
+    /opt/tomcat/bin/startup.sh
