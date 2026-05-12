@@ -20,7 +20,7 @@ sh 'mvn clean package'
 }
 stage('Archive'){
 steps{
-archiveArtifacts artifacts='target/*.war', fingerprint:true
+archiveArtifacts artifacts:'target/*.war', fingerprint:true
 }
 }
 stage('Deploy'){
